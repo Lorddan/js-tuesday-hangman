@@ -1,0 +1,19 @@
+
+/* General */
+
+* { cursor: default; }
+body { width: 100%; height: 100%; font-family: 'Source Sans Pro'; font-weight: 400; -webkit-text-size-adjust: 100%; text-align: center; background-color: #f4f4f4; -webkit-user-select: none; -moz-user-select: none; }
+#page_title { font-size: 80px; margin-top: 50px; color: #444; }
+#game_box { position: relative; width: 1200px; height: 700px; margin: 60px auto 0 auto; background-color: #fff; }
+#game_box #hangman { position: absolute; width: 250px; height: 335px; top: 50px; left: 480px; }
+#game_box #winface { position: absolute; top: 90px; left: 553px; display: none; }
+#game_box #keypad { position: absolute; width: 300px; height: 250px; left: 100px; top: 100px; background-color: #f4f4f4; overflow: hidden; }
+#game_box #keypad .character { float: left; width: 50px; height: 50px; font-size: 20px; text-transform: uppercase; line-height: 50px; border: 1px solid #eee; -moz-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
+#game_box #graveyard { position: absolute; width: 300px; height: 250px; right: 100px; top: 100px; background-color: #f4f4f4; overflow: hidden; }
+#game_box #graveyard .character { float: left; width: 50px; height: 50px; font-size: 20px; text-transform: uppercase; line-height: 50px; opacity: 0.5; border: 1px solid #eee; -moz-box-sizing: border-box; box-sizing: border-box; cursor: default; }
+#game_box #word { position: absolute; bottom: 100px; left: 100px; background-color: #f4f4f4; overflow: hidden; padding: 20px; -moz-box-sizing: border-box; box-sizing: border-box; }
+#game_box #word .character_slot { float: left; width: 80px; height: 80px; margin: 0 10px; border-bottom: 2px solid #666; font-size: 50px; line-height: 80px; text-transform: uppercase; }
+#game_box #word .character_slot .character { opacity: 0; }
+.subtitle { position: absolute; font-size: 20px; }
+.subtitle.keypad { top: 60px; left: 180px; }
+.subtitle.graveyard { top: 60px; right: 180px; }
