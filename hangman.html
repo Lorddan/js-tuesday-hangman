@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <title>Hangman</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-
-  <body>
-    <h1>Hangman</h1>
-    <!-- Keep script links at the very bottom of the "Body" tag so they load last. -->
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="scripts.js"></script>
-  </body>
-
+<head>
+	<title>CodeNewbie | Hangman</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1 id="page_title">CodeNewbie | Hangman</h1>
+	<div id="game_box">
+		<div id="hangman">
+			<img src="images/hangman_0.jpg">
+		</div>
+		<h2 class="subtitle keypad">Choose a letter</h2>
+		<div id="keypad"></div>
+		<h2 class="subtitle graveyard">Already chosen</h2>
+		<div id="graveyard"></div>
+		<div id="word"></div>
+		<img id="winface" src="images/winface.jpg">
+	</div>
+</body>
 </html>
